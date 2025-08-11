@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blink Tech Engineering | SEON-IA</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding: 0.75rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #a3d8ff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    }
+
+    section h2 {
+      color: #ffffff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p, li {
+      color: #e6e6e6;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    .highlight-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-left: 5px solid #00c3ff;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    img.team-photo {
+      width: 100%;
+      max-width: 420px;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.05);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #84d0ff;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Blink Tech Engineering & Services, SAS de CV</h1>
+  <p>Empowering Human Development through Accessible AI Education</p>
+</header>
+
+<nav>
+  <a href="#seon">SEON-IA</a>
+  <a href="#team">Team</a>
+  <a href="#impact">Impact</a>
+  <a href="#technology">Technology</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <section id="seon">
+    <h2>What is SEON-IA?</h2>
+    <div class="highlight-box">
+      An AI-powered educational app for children with Autism Spectrum Disorder (ASD) — no internet required.
+    </div>
+    <p><strong>SEON-IA</strong> uses optimized AI for mobile devices to deliver offline educational activities in language, communication, and math, powered by Qualcomm Hexagon DSP and 8-bit models.</p>
+  </section>
+
+  <section id="team">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+      
+      <!-- Text block -->
+      <div style="flex: 1 1 300px; min-width: 280px;">
+        <h2>Our Team</h2>
+        <p>Developed by:</p>
+        <ul>
+          <li>José Antonio Rodríguez Ahumada</li>
+          <li>Luis Jeronimo Loera Moreno</li>
+          <li>Víctor Eduardo Acosta Villalón</li>
+          <li>PhD. Diego Arturo Soto Monterrubio</li>
+        </ul>
+        <p>Under Blink Tech Ingeniería SAS de CV</p>
+      </div>
+
+      <!-- Image block -->
+      <div style="flex: 1 1 300px; min-width: 280px;">
+        <img src="img/team_photo_seonia.jpeg" alt="SEON-IA Team" class="team-photo" />
+      </div>
+
+    </div>
+  </section>
+
+  <section id="impact">
+    <h2>The Challenge</h2>
+    <p>Across Latin America, over <strong>5 million children</strong> are diagnosed with ASD, and many lack access to specialized educational tools.</p>
+    <div class="highlight-box">
+      SEON-IA removes barriers like internet access, cost, and distance — bringing professional learning therapy to every home.
+    </div>
+    <ul>
+      <li><strong>Limited Access:</strong> Many areas lack tailored digital tools.</li>
+      <li><strong>Connectivity Issues:</strong> SEON-IA works without an internet connection.</li>
+      <li><strong>Financial Burden:</strong> No subscriptions or mobile data required.</li>
+    </ul>
+  </section>
+
+  <section id="technology">
+    <h2>Technological Foundation</h2>
+    <p>Powered by a Qwen 7B-Lite Transformer model quantized to 8 bits, optimized for low-power mobile devices.</p>
+    <ul>
+      <li>Developed with Flutter for Android and iOS</li>
+      <li>Compatible with low-cost hardware</li>
+      <li>Offline NLP, computer vision, and OCR capabilities</li>
+      <li>Data sync via Supabase (when online)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> contact@blinktech.com.mx</p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2018 Blink Tech Engineering & Services, SAS de CV · All rights reserved.
+</footer>
+
+</body>
+</html>
